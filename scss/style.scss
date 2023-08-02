@@ -1,0 +1,61 @@
+@import "./_reset/reset";
+
+//fonts
+
+//Abel
+@font-face {
+	font-family: "Abel";
+	src: url(../fonts/abel/Abel-Regular.ttf);
+}
+
+//Philosopher_
+@font-face {
+	font-family: "Philosopher_Bold";
+	src: url(../fonts/philosopher/Philosopher-Bold.ttf);
+}
+@font-face {
+	font-family: "Philosopher_Regular";
+	src: url(../fonts/philosopher/Philosopher-Regular.ttf);
+}
+@font-face {
+	font-family: "Philosopher_Italic";
+	src: url(../fonts/philosopher/Philosopher-Regular.ttf);
+}
+
+//TT_Norms
+@font-face {
+	font-family: "TT_Norms-Bold";
+	src: url(../fonts/tt_norms/TTNorms-Bold.ttf);
+}
+@font-face {
+	font-family: "TT_Norms-EXBold";
+	src: url(../fonts/tt_norms/TTNorms-ExtraBold.ttf);
+}
+@font-face {
+	font-family: "TT_Norms-Light";
+	src: url(../fonts/tt_norms/TTNorms-Light.ttf);
+}
+@font-face {
+	font-family: "TT_Norms-LItalic";
+	src: url(../fonts/tt_norms/TTNorms-LightItalic.ttf);
+}
+@font-face {
+	font-family: "TT_Norms-Medium";
+	src: url(../fonts/tt_norms/TTNorms-Medium.ttf);
+}
+@font-face {
+	font-family: "TT_Norms-Reg";
+	src: url(../fonts/tt_norms/TTNorms-Regular.ttf);
+}
+
+
+//body
+body {
+	font-family: "TT_Norms-Reg";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+
