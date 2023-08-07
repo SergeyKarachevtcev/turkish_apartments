@@ -58,15 +58,16 @@ body {
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 150%;
 }
 
 .main_section {
+	margin: 0 auto;
 	background-image: url(../img/header/header_bg/header_bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	width: 1929px;
 	min-height: 1011px;
+	background-size: cover;
 	/* margin-bottom: 170px; */
 }
 
@@ -1166,11 +1167,11 @@ body {
 	background-position-y: 133%;
 }
 
-.solve_four{
+.solve_four {
 	background-image: url(../img/solve_task/solve-4.png);
 	background-repeat: no-repeat;
 	background-position-x: 45%;
-    background-position-y: 0%;
+	background-position-y: 0%;
 }
 
 .solve_task_text {
@@ -1209,4 +1210,198 @@ body {
 	line-height: 140%;
 	letter-spacing: 1.8px;
 	text-transform: uppercase;
+}
+
+/* affter_buy_section */
+
+.affter_buy_section {
+	background-image: url(../img/affter_buy/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 1014px;
+	padding-top: 120px;
+}
+
+.affter_buy_wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.affter_buy_left {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 600px;
+	justify-content: space-between;
+	max-height: 320px;
+}
+.list_services {
+	display: flex;
+	gap: 30px;
+}
+
+.affter_buy_title {
+	max-width: 600px;
+	font-family: "Philosopher_Bold";
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	margin-bottom: 40px;
+}
+
+.affter_buy_text {
+	font-size: 22px;
+	font-family: "TT_Norms-Reg";
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	margin-bottom: 40px;
+}
+
+.list_services_number {
+	font-family: "Philosopher_Italic";
+	color: #cbb47a;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.affter_buy_right {
+	position: relative;
+	z-index: 3;
+}
+
+.affter_buy_right_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 75px 45px;
+	width: 433px;
+	height: 565px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0px 50px 130px 0px rgba(26, 29, 33, 0.03);
+	&::before {
+		content: "";
+		position: absolute;
+		width: 95%;
+		height: 30%;
+		top: -10px;
+		left: 9px;
+		border-radius: 20px;
+		background: #cbb47a;
+		z-index: -1;
+	}
+	h4 {
+		color: var(--2, #212225);
+		text-align: center;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+		margin-bottom: 20px;
+	}
+	h5 {
+		color: rgba(33, 34, 37, 0.5);
+		text-align: center;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+	}
+}
+
+.list_services_text {
+	max-height: 72px;
+}
+
+/* map */
+
+.map {
+	margin: 0 auto;
+	position: relative;
+	height: 750px;
+	width: 1916px;
+}
+
+.map_box {
+	position: absolute;
+	width: 418px;
+	height: 430px;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 4px 100px 0px rgba(26, 29, 33, 0.05);
+	top: 20%;
+	left: 20%;
+	z-index: 1; /* чтобы контент был над картой */
+	padding: 79px 54px;
+	border-radius: 5px;
+}
+
+.map_box_data_wrap {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 30px;
+	a{
+		color: #000;
+		cursor: pointer;
+	}
+}
+
+.map_box_data_wrap_social {
+	display: flex;
+	gap: 10px;
+}
+.map_box_title {
+	font-family: "Philosopher_Bold";
+	margin-bottom: 30px;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+}
+
+.map_box_text {
+	margin-bottom: 10px;
+	color: #000;
+	font-family: "TT_Norms-LItalic";
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 150%;
+}
+
+//footer
+.footer{
+padding-top: 70px;
+padding-bottom: 120px;
+}
+
+.footer_wrapp{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_text_wrapp{
+	max-width: 420px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	h3{
+		font-family: "TT_Norms-Bold";
+	}
+}
+
+.footer_social_wrapp{
+	display: flex;
+	gap: 15px;
+	align-items: center;
 }
