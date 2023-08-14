@@ -1,0 +1,138 @@
+.help_you_form_section {
+	margin: 0 auto;
+	background-image: url(../img/help_form/bg/form_bg.png);
+	width: 100%;
+	min-height: 522px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 90px;
+	border-radius: 20px;
+}
+
+.form_title {
+	margin-top: 90px;
+	font-family: "Philosopher_Bold";
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	margin-bottom: 15px;
+	max-width: 740px;
+}
+
+.form_text {
+	font-family: "TT_Norms-Bold";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	max-width: 740px;
+}
+
+.form_wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+	gap: 20px;
+	margin-bottom: 30px;
+}
+
+.help_you_form_input {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	padding: 44px 58px;
+	&::placeholder {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		color: #8c8c8c;
+		font-family: "TT_Norms-Light";
+	}
+}
+
+.form_checbox {
+	max-width: 600px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	row-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.checbox_wrapper {
+	display: flex;
+	gap: 15px;
+}
+
+.checbox_wrapper {
+	label {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+}
+
+
+//media-mobile
+
+@media (max-width: 1200px) {
+
+
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+	.form_title{
+		font-size: 21px;
+	}
+	.form_text{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 767px) {
+	.form_checbox{
+		grid-template-columns: 1fr 1fr;
+	}
+	.form_title{
+		font-size: 21px;
+	}
+	.form_text{
+		font-size: 12px;
+	}
+	.form_wrapper{
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+	}
+
+}
+
+@media (max-width: 575px) {
+	.help_you_form_input{
+		&::placeholder{
+			font-size: 12px;
+		}
+	}
+	.form_checbox{
+		grid-template-columns: 1fr;
+	}
+	.btn{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 320px) {
+
+}

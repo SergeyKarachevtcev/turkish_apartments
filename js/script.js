@@ -1,27 +1,46 @@
 //swiper
 
-var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 3,
-	spaceBetween: 30,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-});
+/* Создание и настройка Swiper слайдера */
 
 // swip button
-var swiper = new Swiper(".mySwiper", {
+var mySwiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
 	spaceBetween: 30,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
+	//добавляем кнопки
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
+	on: {
+		init: function () {
+			this.update(); // обновляем параметры слайдера при инициализации
+		},
+	},
 });
+
+/* Обновление параметров Swiper слайдера при изменении размера экрана */
+function updateSwiper() {
+	if (window.innerWidth <= 767) {
+		mySwiper.params.slidesPerView = 1;
+	} else if (window.innerWidth <= 1200) {
+		mySwiper.params.slidesPerView = 2;
+	} else {
+		mySwiper.params.slidesPerView = 3;
+	}
+	mySwiper.update(); // обновляем параметры слайдера
+}
+
+/* Вызов функции обновления при загрузке страницы и изменении размера окна */
+window.addEventListener("load", updateSwiper);
+window.addEventListener("resize", updateSwiper);
+
+//top obj swiper
+
+
 
 //map
 
@@ -55,5 +74,5 @@ function init() {
 
 	// Размещение геообъекта на карте.
 	myMap.geoObjects.add(myPlacemark);
-	myMap.behaviors.disable("scrollZoom");// отключил скролл карты 
+	myMap.behaviors.disable("scrollZoom"); // отключил скролл карты
 }

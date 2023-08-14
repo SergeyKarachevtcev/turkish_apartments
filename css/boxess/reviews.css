@@ -1,0 +1,78 @@
+.reviews_section_title {
+  font-family: "Philosopher_Bold";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  width: 470px;
+}
+
+.reviews_section_text {
+  font-family: "TT_Norms-Light";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  width: 510px;
+  margin-bottom: 45px;
+}
+
+.reviews_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews_list {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.reviews_list .reviews_title {
+  color: #487bde;
+  font-family: "Philosopher_Bold";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.reviews_list p {
+  font-family: "TT_Norms-Light";
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.reviews_list span {
+  font-size: 16px;
+  line-height: 0;
+}
+
+
+.reviews_list_start span {
+  color: #487bde;
+  font-family: "Philosopher_Bold";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.reviews_list_start p {
+  font-family: "TT_Norms-Light";
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+

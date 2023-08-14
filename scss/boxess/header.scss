@@ -1,0 +1,203 @@
+//header
+.header {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.header_contacts {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header_contacts-tel {
+	color: #ffffff;
+	text-align: right;
+	font-family: "TT_Norms-Bold";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.title {
+	max-width: 785px;
+	color: #ffffff;
+	font-family: "Philosopher_Regular";
+	font-size: 54px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	text-transform: uppercase;
+	span {
+		color: #cbb47a;
+		font-family: "Philosopher_Bold";
+	}
+}
+
+.main_title {
+	margin-bottom: 50px;
+}
+
+.main_section_text_wrapper {
+	display: flex;
+	position: relative;
+}
+
+.elipse_wrapper {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.elipse_1 {
+	background-color: #a7a9ae;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+}
+
+.elipse_2 {
+	background-color: #a7a9ae;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+}
+
+.main_section_text {
+	padding-left: 38px;
+	max-width: 487px;
+	margin-bottom: 50px;
+	color: #fff;
+	font-family: "TT_Norms-Medium";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.main_section-link {
+	margin-bottom: 50px;
+}
+.offers_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: -15px;
+}
+
+.offers_card {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	border-radius: 20px;
+	background: #fff;
+	padding: 50px;
+	width: 371px;
+	height: 302px;
+}
+
+.offers_card-title {
+	font-family: "TT_Norms-Bold";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: uppercase;
+	span {
+		font-size: 62px;
+	}
+}
+
+.offers_card-text {
+	max-width: 225px;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.offers_card_wrapper {
+	position: absolute;
+	top: 75%;
+	right: 10%;
+}
+
+//media-mobile
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+	.title {
+		font-size: 28px;
+	}
+	.main_section-link {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.offers_list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 991px) {
+	.offers_list {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+	.main_section_text_wrapper{
+		margin-bottom: 0;
+	}
+	.header{
+		margin-bottom: 30px;
+	}
+	.header_contacts-tel{
+		font-size: 10px;
+	}
+	.main_section{
+		min-height: 100%;
+	}
+	.offers_card {
+		width: 153px;
+		height: 174px;
+		padding: 17px;
+	}
+	.offers_card_wrapper {
+		right: 3%;
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.btn {
+		font-size: 10px;
+	}
+	.offers_card-title {
+		font-size: 10px;
+	}
+	.offers_card-text {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+}

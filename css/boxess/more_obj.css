@@ -1,0 +1,160 @@
+.more_obj_section {
+  padding-top: 120px;
+}
+
+.more_obj_wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.more_obj_wrapp_left_points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.points_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  max-width: 280px;
+}
+.points_card span {
+  position: relative;
+  font-family: "Philosopher_Italic";
+  color: #cbb47a;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.points_card span::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/more_obj/ponts/line.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 76px;
+  height: 1px;
+  top: 30px;
+  left: 70px;
+}
+.points_card p {
+  font-family: "TT_Norms-Medium";
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.wrapp_left_title {
+  font-family: "Philosopher_Bold";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.more_obj_wrapp_wrigt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 75px 45px;
+  width: 433px;
+  height: 565px;
+  border-radius: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 50px 130px 0px rgba(26, 29, 33, 0.03);
+          box-shadow: 0px 50px 130px 0px rgba(26, 29, 33, 0.03);
+}
+.more_obj_wrapp_wrigt::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 95%;
+  height: 30%;
+  top: -10px;
+  left: 9px;
+  border-radius: 20px;
+  background: #cbb47a;
+}
+.more_obj_wrapp_wrigt h4 {
+  color: var(--2, #212225);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.more_obj_wrapp_wrigt h5 {
+  color: rgba(33, 34, 37, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.more_obj_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.more_obj_form_btn {
+  border-radius: 10px;
+  background: #497bdf;
+  font-family: "TT_Norms-Medium";
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 35px 30px;
+}
+
+.more_obj_form_input {
+  padding: 37px;
+  color: #8c8c8c;
+  font-family: "TT_Norms-Light";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(44, 50, 62, 0.04) inset;
+          box-shadow: 0px 0px 30px 0px rgba(44, 50, 62, 0.04) inset;
+}

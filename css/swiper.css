@@ -143,7 +143,7 @@
 .swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper::before {
 	width: 100%;
 	min-width: 1px;
-	height: var(--swiper-centered-offset-after);
+/* 	height: var(--swiper-centered-offset-after); */
 }
 .swiper-3d .swiper-slide-shadow,
 .swiper-3d .swiper-slide-shadow-bottom,
